@@ -1,0 +1,21 @@
+.pokecard {
+    align-self: center;
+    margin: .25em;
+    padding: .5em;
+    color: white;
+    border-radius: 1em;
+    height: 5em;
+    width: 10em;
+    background: #f83f3f;
+    font-size: 1.25em;
+    font-weight: bold;
+
+
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}

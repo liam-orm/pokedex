@@ -1,0 +1,16 @@
+.page-control {
+    display: flex;
+    width: 20em;
+    background: #333;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+
+    &__item {
+        margin: 1em;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
