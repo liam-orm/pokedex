@@ -10,3 +10,14 @@ You will also see any lint errors in the console.
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+### technologies used.
+
+React
+Create-react-app
+MobX
+Axios
+
+CSS
+HTML
+JS/X
