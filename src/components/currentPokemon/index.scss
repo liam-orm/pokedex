@@ -1,0 +1,56 @@
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: black;
+    font-family: inherit;
+
+    &__title {
+        font-size: 2.25em;
+        text-transform: capitalize;
+        background: white;
+        width: 100%;
+        padding: .25em .75em;
+        box-sizing: border-box;
+        border-radius: .5rem;
+        border: 2px solid #555555;
+        margin-bottom: 1em;
+    }
+
+    &__heading {
+        font-size: 1.25em;
+        text-transform: capitalize;
+        background: white;
+        padding: .25em .75em;
+        box-sizing: border-box;
+        border: 2px solid #555555;
+        margin-top: 1.25em;
+        display: inline-flex;
+        border-radius: .5rem;
+    }
+
+    &__text {
+        font-size: 1em;
+        text-transform: capitalize;
+        background: #333;
+        color: white;
+        padding: .25em .75em;
+        box-sizing: border-box;
+        border: 2px solid #555555;
+        margin-top: .2em;
+        display: inline-flex;
+        border-radius: .5rem;
+    }
+
+    &__image {
+        width: 25em;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        -ms-interpolation-mode: nearest-neighbor;
+        background: white;
+        border-radius: .5rem;
+        border: 2px solid #555555;
+    }
+}

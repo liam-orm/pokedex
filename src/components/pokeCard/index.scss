@@ -1,14 +1,22 @@
 .pokecard {
     align-self: center;
+    font-family: inherit;
     margin: .25em;
     padding: .5em;
-    color: white;
-    border-radius: 1em;
-    height: 5em;
-    width: 10em;
-    background: #f83f3f;
+    color: #333;
+    border-radius: .5em;
+    width: 100%;
+    background: white;
     font-size: 1.25em;
-    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(107, 107, 107, 0.75);
+    transition: ease all .15s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
 
 
 

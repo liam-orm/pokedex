@@ -1,3 +1,35 @@
 .dashboard {
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    position: relative;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: hidden;
+
+    @media (max-width: 792px) {
+        flex-direction: column-reverse;
+    }
+
+    &__section {
+        padding: 1em;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    &__pokemon-list {
+        min-width: 20em;
+        width: 20em;
+        overflow-y: scroll;
+        background:#E0052D;
+
+        @media (max-width: 792px) {
+            width: 100vw;
+        }
+    }
+
+    &__pokemon-viewer {
+        width: 100%;
+        background: #7FABD2;
+    }
 }

@@ -1,13 +1,20 @@
 .page-control {
     display: flex;
-    width: 20em;
-    background: #333;
+    width: 100%;
+    background: #E0052D;
     color: white;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    max-height: 3.5rem;
+    border-top: 3px solid #333;
+    font-size: 1.25em;
+    font-weight: bold;
 
     &__item {
-        margin: 1em;
+        margin: 1em 5em;
 
         &:hover {
             cursor: pointer;

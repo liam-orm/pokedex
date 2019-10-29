@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
 import PokeCard from '../../components/pokeCard'
-import PageControls from '../../components/pageControls'
+import CurrentPokemon from '../../components/currentPokemon'
+import SearchBox from '../../components/searchBox'
 
 import mainStore from '../../stores/mainStore'
 
@@ -12,9 +13,14 @@ export default class Dashboard extends Component {
     render () {
         return (
             <div className='dashboard'>
-                <PokeCard mainStore={mainStore} />
-                <PageControls mainStore={mainStore} />
-
+                <div className='dashboard__section dashboard__pokemon-list'>
+                    <SearchBox mainStore={mainStore} />
+                    <hr />
+                    <PokeCard mainStore={mainStore} />
+                </div>
+                <div className='dashboard__section dashboard__pokemon-viewer'>
+                    <CurrentPokemon mainStore={mainStore} />
+                </div>
             </div>
         )
     }
