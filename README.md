@@ -13,11 +13,12 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### technologies used.
 
-React
-Create-react-app
-MobX
-Axios
+React <br />
+Create-react-app<br />
+MobX<br />
+Axios<br />
 
-CSS
-HTML
-JS/X
+CSS<br />
+HTML<br />
+JS/X<br />
+<br />
