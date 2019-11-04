@@ -10,6 +10,7 @@ class MainStore {
     @observable pokemonPageCount = 0
 
     @observable isLoaded = false
+    @observable cache = []
 
     @action requestList = async () => {
 
@@ -39,12 +40,16 @@ class MainStore {
     }
 
     @action getPokemonDetails = async (name) => {
-        try {
-            await axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`).then(result => {
-                this.currentPokemon = result.data
-            })
-        } catch (ex) {
-            console.error(ex, 'Error occured when requesting details')
+        if (this.cache[name]) this.currentPokemon = this.cache[name]
+        else {
+            try {
+                await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`).then(result => result.json()).then(result => {
+                    this.currentPokemon = result
+                    this.cache[this.currentPokemon.name] = this.currentPokemon
+                })
+            } catch (ex) {
+                console.error(ex, 'Error occured when requesting details')
+            }
         }
     }
 }
