@@ -6,10 +6,10 @@
     font-family: inherit;
 
     &__title {
+        display: inline;
         font-size: 2em;
         text-transform: capitalize;
         background: white;
-        width: 100%;
         padding: .25em .75em;
         box-sizing: border-box;
         border-radius: .5rem;

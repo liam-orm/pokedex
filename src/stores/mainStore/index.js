@@ -5,23 +5,15 @@ class MainStore {
     @observable pokemon = {}
     @observable currentPokemon = null
 
-    @observable page = 0
     @observable pokemonCount = 0
-    @observable pokemonPageCount = 0
+    //@observable page = 0
+    //@observable pokemonPageCount = 0
 
     @observable isLoaded = false
     @observable cache = []
 
     @action requestList = async () => {
-
-        /*
-        TODO:
-            - Add Search function
-            - Style a better view
-            - Add caching to requests.
-        */
         let limit = 1000
-        // let offset = this.page * limit
 
         try {
             await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=${limit}`).then(result => {
