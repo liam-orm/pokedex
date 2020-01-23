@@ -15,7 +15,7 @@ class PokeCard extends Component { // TODO: add Transitioning
         let pokeCards = this.props.mainStore.pokemon.map((item, i) =>
             <div className='pokecard' hidden={item.hide} onClick={() => {
                 this.props.mainStore.getPokemonDetails(item.name)
-            }} key={item.name + i}>{item.name}</div>
+                }} key={item.name + i}>{item.name}</div>
         )
         return (
             <div className='pokecard__container'>

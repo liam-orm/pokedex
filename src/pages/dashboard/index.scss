@@ -20,6 +20,7 @@
     &__pokemon-list {
         min-width: 20em;
         width: 20em;
+        min-height: 35vh;
         overflow-y: scroll;
         background:#E0052D;
 
@@ -31,5 +32,6 @@
     &__pokemon-viewer {
         width: 100%;
         background: #7FABD2;
+        min-height: 60vh;
     }
 }

@@ -17,6 +17,10 @@ class SearchBox extends Component{
                     item.hide = true
                 }
             })
+        } else {
+            this.props.mainStore.pokemon.forEach(item => {
+             item.hide = false
+            })
         }
     }
 

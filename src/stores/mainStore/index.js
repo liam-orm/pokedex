@@ -24,8 +24,6 @@ class MainStore {
 
                 this.isLoaded = true
             })
-
-            console.log(this.pokemon)
         } catch (ex) {
             console.error(ex, 'Error occured when requesting api.')
         }
